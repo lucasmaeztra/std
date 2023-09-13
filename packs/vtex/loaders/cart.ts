@@ -1,7 +1,7 @@
 import { Context } from "deco-sites/std/packs/vtex/accounts/vtex.ts";
 import { OrderForm } from "deco-sites/std/packs/vtex/types.ts";
 import { transform } from "deco-sites/std/packs/vtex/utils/future.ts";
-import { parseCookie } from "deco-sites/std/packs/vtex/utils/cartOrderForm.ts";
+import { parseCookie } from "deco-sites/std/packs/vtex/utils/orderFormFromApps.ts";
 import { fetchSafe } from "$apps/utils/fetch.ts";
 import { AppContext } from "$apps/vtex/mod.ts";
 import { proxySetCookie } from "$apps/vtex/utils/cookies.ts";
