@@ -1,5 +1,5 @@
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
-import type { LoaderReturnType } from "$live/types.ts";
+import type { LoaderReturnType } from "deco/types.ts";
 import type {
   ProductDetailsPage,
   ProductListingPage,
@@ -21,6 +21,12 @@ export interface Props {
    */
   titleTemplate?: string;
   description?: string;
+  /**
+   * @title Title template
+   * @description add a %s whenever you want it to be replaced with the category name or search term
+   * @default %s | Deco.cx
+   */
+  descriptionTemplate?: string;
   /** @default website */
   type?: OGType;
   /** @description Recommended: 1200 x 630 px (up to 5MB) */

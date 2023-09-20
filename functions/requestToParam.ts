@@ -1,7 +1,7 @@
-import type { FunctionContext, LoaderFunction } from "$live/types.ts";
+import type { FunctionContext, LoaderFunction } from "deco/types.ts";
+import type { RequestURLParam } from "https://denopkg.com/deco-cx/apps@0.7.4/website/functions/requestToParam.ts";
 
-export type RequestURLParam = string;
-
+export type { RequestURLParam };
 export interface Props {
   /**
    * @default slug

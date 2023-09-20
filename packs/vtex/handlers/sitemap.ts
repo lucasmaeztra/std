@@ -1,6 +1,13 @@
-import base from "https://denopkg.com/deco-cx/apps@0.2.8/vtex/handlers/sitemap.ts";
+import type { Context } from "deco-sites/std/packs/vtex/accounts/vtex.ts";
+import { transform } from "deco-sites/std/packs/vtex/utils/future.ts";
+import {
+  default as base,
+  Props,
+} from "https://denopkg.com/deco-cx/apps@0.7.4/vtex/handlers/sitemap.ts";
 
 /**
  * @title Sitemap Proxy
  */
-export default base;
+export default function SiteMapProxy(props: Props, ctx: Context) {
+  return base(props, transform(ctx));
+}

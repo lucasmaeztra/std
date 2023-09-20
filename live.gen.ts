@@ -106,43 +106,6 @@ import * as $$$$$$$$$$$17 from "./actions/vtex/cart/updateItemPrice.ts";
 import * as $$$$$$$$$$$18 from "./actions/vtex/cart/updateAttachment.ts";
 import * as $$$$$$$$$$$19 from "./actions/vtex/cart/simulation.ts";
 import * as $$$$$$$$$$$20 from "./actions/vtex/newsletter/subscribe.ts";
-import { DecoManifest } from "$live/types.ts";
-import * as i1$0 from "$live/loaders/secret.ts";
-import * as i1$1 from "$live/loaders/state.ts";
-import * as i1$2 from "$live/loaders/workflows/events.ts";
-import * as i1$3 from "$live/loaders/workflows/get.ts";
-import * as i1$$0 from "$live/handlers/devPage.ts";
-import * as i1$$1 from "$live/handlers/fresh.ts";
-import * as i1$$2 from "$live/handlers/proxy.ts";
-import * as i1$$3 from "$live/handlers/redirect.ts";
-import * as i1$$4 from "$live/handlers/router.ts";
-import * as i1$$5 from "$live/handlers/routesSelection.ts";
-import * as i1$$6 from "$live/handlers/workflowRunner.ts";
-import * as i1$$$0 from "$live/pages/LivePage.tsx";
-import * as i1$$$$0 from "$live/sections/Conditional_Beta.tsx";
-import * as i1$$$$1 from "$live/sections/EmptySection.tsx";
-import * as i1$$$$2 from "$live/sections/PageInclude.tsx";
-import * as i1$$$$3 from "$live/sections/Slot.tsx";
-import * as i1$$$$4 from "$live/sections/UseSlot.tsx";
-import * as i1$$$$$0 from "$live/matchers/MatchAlways.ts";
-import * as i1$$$$$1 from "$live/matchers/MatchCron.ts";
-import * as i1$$$$$2 from "$live/matchers/MatchDate.ts";
-import * as i1$$$$$3 from "$live/matchers/MatchDevice.ts";
-import * as i1$$$$$4 from "$live/matchers/MatchEnvironment.ts";
-import * as i1$$$$$5 from "$live/matchers/MatchHost.ts";
-import * as i1$$$$$6 from "$live/matchers/MatchLocation.ts";
-import * as i1$$$$$7 from "$live/matchers/MatchMulti.ts";
-import * as i1$$$$$8 from "$live/matchers/MatchRandom.ts";
-import * as i1$$$$$9 from "$live/matchers/MatchSite.ts";
-import * as i1$$$$$10 from "$live/matchers/MatchUserAgent.ts";
-import * as i1$$$$$$0 from "$live/flags/audience.ts";
-import * as i1$$$$$$1 from "$live/flags/everyone.ts";
-import * as i1$$$$$$2 from "$live/flags/flag.ts";
-import * as i1$$$$$$3 from "$live/flags/multivariate.ts";
-import * as i1$$$$$$$0 from "$live/actions/secrets/encrypt.ts";
-import * as i1$$$$$$$1 from "$live/actions/workflows/cancel.ts";
-import * as i1$$$$$$$2 from "$live/actions/workflows/signal.ts";
-import * as i1$$$$$$$3 from "$live/actions/workflows/start.ts";
 
 const manifest = {
   "functions": {
@@ -184,10 +147,6 @@ const manifest = {
     "deco-sites/std/accounts/yourViews.ts": $$7,
   },
   "loaders": {
-    "$live/loaders/secret.ts": i1$0,
-    "$live/loaders/state.ts": i1$1,
-    "$live/loaders/workflows/events.ts": i1$2,
-    "$live/loaders/workflows/get.ts": i1$3,
     "deco-sites/std/loaders/linxImpulse/autocompletes/popular.ts": $$$9,
     "deco-sites/std/loaders/linxImpulse/autocompletes/suggestions.ts": $$$10,
     "deco-sites/std/loaders/linxImpulse/pages/recommendations.ts": $$$11,
@@ -229,22 +188,10 @@ const manifest = {
     "./routes/styles.css.ts": $$$$2,
   },
   "handlers": {
-    "$live/handlers/devPage.ts": i1$$0,
-    "$live/handlers/fresh.ts": i1$$1,
-    "$live/handlers/proxy.ts": i1$$2,
-    "$live/handlers/redirect.ts": i1$$3,
-    "$live/handlers/router.ts": i1$$4,
-    "$live/handlers/routesSelection.ts": i1$$5,
-    "$live/handlers/workflowRunner.ts": i1$$6,
     "deco-sites/std/handlers/sitemap.ts": $$$$$$0,
     "deco-sites/std/handlers/vtex/sitemap.ts": $$$$$$1,
   },
   "sections": {
-    "$live/sections/Conditional_Beta.tsx": i1$$$$0,
-    "$live/sections/EmptySection.tsx": i1$$$$1,
-    "$live/sections/PageInclude.tsx": i1$$$$2,
-    "$live/sections/Slot.tsx": i1$$$$3,
-    "$live/sections/UseSlot.tsx": i1$$$$4,
     "deco-sites/std/sections/Analytics.tsx": $$$$$$$$8,
     "deco-sites/std/sections/configButterCMS.global.tsx": $$$$$$$$4,
     "deco-sites/std/sections/configLinxImpulse.global.tsx": $$$$$$$$0,
@@ -259,10 +206,6 @@ const manifest = {
     "deco-sites/std/sections/VTEXPortalDataLayerCompatibility.tsx": $$$$$$$$6,
   },
   "actions": {
-    "$live/actions/secrets/encrypt.ts": i1$$$$$$$0,
-    "$live/actions/workflows/cancel.ts": i1$$$$$$$1,
-    "$live/actions/workflows/signal.ts": i1$$$$$$$2,
-    "$live/actions/workflows/start.ts": i1$$$$$$$3,
     "deco-sites/std/actions/vnda/cart/addItem.ts": $$$$$$$$$$$0,
     "deco-sites/std/actions/vnda/cart/setShippingAddress.ts": $$$$$$$$$$$3,
     "deco-sites/std/actions/vnda/cart/updateCoupon.ts": $$$$$$$$$$$1,
@@ -286,32 +229,10 @@ const manifest = {
     "deco-sites/std/actions/vtex/wishlist/removeItem.ts": $$$$$$$$$$$6,
   },
   "name": "deco-sites/std",
-  "pages": {
-    "$live/pages/LivePage.tsx": i1$$$0,
-  },
-  "matchers": {
-    "$live/matchers/MatchAlways.ts": i1$$$$$0,
-    "$live/matchers/MatchCron.ts": i1$$$$$1,
-    "$live/matchers/MatchDate.ts": i1$$$$$2,
-    "$live/matchers/MatchDevice.ts": i1$$$$$3,
-    "$live/matchers/MatchEnvironment.ts": i1$$$$$4,
-    "$live/matchers/MatchHost.ts": i1$$$$$5,
-    "$live/matchers/MatchLocation.ts": i1$$$$$6,
-    "$live/matchers/MatchMulti.ts": i1$$$$$7,
-    "$live/matchers/MatchRandom.ts": i1$$$$$8,
-    "$live/matchers/MatchSite.ts": i1$$$$$9,
-    "$live/matchers/MatchUserAgent.ts": i1$$$$$10,
-  },
-  "flags": {
-    "$live/flags/audience.ts": i1$$$$$$0,
-    "$live/flags/everyone.ts": i1$$$$$$1,
-    "$live/flags/flag.ts": i1$$$$$$2,
-    "$live/flags/multivariate.ts": i1$$$$$$3,
-  },
   "islands": {},
   "baseUrl": import.meta.url,
 };
 
 export type Manifest = typeof manifest;
 
-export default manifest satisfies DecoManifest;
+export default manifest;
